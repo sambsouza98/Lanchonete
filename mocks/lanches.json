@@ -1,0 +1,8 @@
+{
+  "lanches": [
+      {"id": 1, "lanche": "X-Bacon", "ingredientes": [ 2, 3, 5 ] },
+      {"id": 2, "lanche": "X-Burger", "ingredientes": [ 3, 5 ]},
+      {"id": 3, "lanche": "X-Egg", "ingredientes": [ 4, 3, 5 ]},
+      {"id": 4, "lanche": "X-Egg Bacon", "ingredientes": [ 4, 2, 3, 5 ]}
+  ]
+}

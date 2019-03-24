@@ -1,0 +1,27 @@
+{
+  "name": "lanchonete",
+  "version": "1.0.0",
+  "description": "Repositório criado para execução de teste técnico em Node.Js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambsouza98/Lanchonete.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sambsouza98/Lanchonete/issues"
+  },
+  "homepage": "https://github.com/sambsouza98/Lanchonete#readme",
+  "dependencies": {
+    "express": "4.16.4",
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0"
+  }
+}
