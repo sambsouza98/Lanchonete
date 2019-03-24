@@ -3,8 +3,7 @@
 * Para o lanche ser light ele deve possuir alface (id do ingrediente 1) e não incluir bacon (id do ingrediente 2);
 * */
 
-const ALFACE = 1;
-const BACON = 2;
+const {ALFACE, BACON} = require('../enums/ingredientes');
 
 module.exports = () => {
     function isLight(idsIngredientes){

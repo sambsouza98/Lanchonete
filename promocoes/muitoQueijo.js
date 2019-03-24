@@ -2,7 +2,7 @@
 * Funcao que recebe um id de ingredientes e retorna a quantidade de queijos que nao serao cobrados.
 * */
 
-const QUEIJO = 5;
+const {QUEIJO} = require('../enums/ingredientes');
 
 module.exports = () => {
     function muitoQueijo (idsIngredientes){

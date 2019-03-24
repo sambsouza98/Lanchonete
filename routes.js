@@ -19,4 +19,6 @@ module.exports = app => {
         const {idLanche = null} = req.params;
         res.send(getCardapio(idLanche))
     })
+
+    app.post('')
 }
