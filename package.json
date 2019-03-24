@@ -16,12 +16,10 @@
     "url": "https://github.com/sambsouza98/Lanchonete/issues"
   },
   "homepage": "https://github.com/sambsouza98/Lanchonete#readme",
-  "dependencies": {
-    "express": "4.16.4",
-    "mocha": "^6.0.2",
-    "nodemon": "^1.18.10"
-  },
   "devDependencies": {
-    "chai": "^4.2.0"
+    "express": "4.16.4",
+    "mocha": "6.0.2",
+    "nodemon": "1.18.10",
+    "chai": "4.2.0"
   }
 }

@@ -11,11 +11,11 @@ module.exports = app => {
         res.send(getIngredientes(idIngrediente));
     })
 
-    app.get('/Lanches', (req, res) => {
+    app.get('/Cardapio', (req, res) => {
         res.send(getCardapio());
     })
 
-    app.get('/Lanches/:idLanche', (req, res) => {
+    app.get('/Cardapio/:idLanche', (req, res) => {
         const {idLanche = null} = req.params;
         res.send(getCardapio(idLanche))
     })
