@@ -11,7 +11,7 @@ module.exports = () => {
         let qtdeQueijosGratis = 0;
         let qtdeCarneGratis = 0;
         let light = false;
-        let {ingredientes} = getIngredientes();
+        let ingredientes = getIngredientes();
         let lanche = {};
         let preco = 0.00;
 

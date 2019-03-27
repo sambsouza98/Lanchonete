@@ -1,11 +1,11 @@
-const ingredientes = require('../mocks/ingredientes');
+const {ingredientes} = require('../mocks/ingredientes');
 
 module.exports = () => {
     function getIngredientes(ingrediente = null){
 
         if(ingrediente){
-            let dadosIngrediente = ingredientes.find(ing => ing.nome === ingrediente);
-            return dadosIngrediente ? dadosIngrediente : {};
+            let dadosIngrediente = ingredientes.filter(ing => ing.nome === ingrediente);
+            return dadosIngrediente ? dadosIngrediente[0] : {};
         }
 
         return ingredientes;

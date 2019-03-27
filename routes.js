@@ -1,9 +1,14 @@
 const getIngredientes = require('./services/getIngredientes')();
 const getCardapio= require('./services/getCardapio')();
+const calcularPreco= require('./services/calcularPreco')();
+const bodyParser = require('body-parser');
+// create application/json parser
+const jsonParser = bodyParser.json();
 
 module.exports = app => {
     app.get('/Ingredientes', (req, res) => {
-        res.send(getIngredientes());
+        const ingredientes = getIngredientes();
+        res.send(ingredientes);
     })
 
     app.get('/Ingredientes/:idIngrediente', (req, res) => {
@@ -20,5 +25,11 @@ module.exports = app => {
         res.send(getCardapio(idLanche))
     })
 
-    app.post('')
+    app.post('/Pedido', jsonParser, async function (req, res) {
+        if (!req.body) return res.sendStatus(400);
+
+        const preco = calcularPreco(req.body.ingredientes);
+
+        res.status(200).send(preco);
+    })
 }
