@@ -30,6 +30,6 @@ module.exports = app => {
 
         const preco = calcularPreco(req.body.ingredientes);
 
-        res.status(200).send(preco);
+        res.status(200).send(200, preco);
     })
 }

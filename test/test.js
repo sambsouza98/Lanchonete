@@ -135,9 +135,3 @@ describe("Teste da funcao que calcularPreco", function (){
         assert.equal(calcularPreco(XBURGUER3CARNES3QUEIJOSSALADA), 8.46)
     })
 });
-
-describe('Teste das APIs', function (){
-    it('Teste da rota getIngredientes', function (){
-
-    })
-})
