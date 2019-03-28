@@ -3,7 +3,7 @@ const chai = require('chai');
 const expect = chai.expect;
 const {getIngredientes, getCardapio} = require('../services');
 const {isLight, muitoQueijo, muitaCarne} = require('../promocoes');
-const calcularPreco = require('../services/calcularPreco')();
+const calcularPreco = require('../controller/calcularPreco')();
 const {ALFACE, BACON, OVO, QUEIJO, HAMBURGUER} = require('../enums/ingredientes');
 const {XBACON, XBURGUER, XEGG, XEGGBACON, XBURGUERSALADA, XBURGUER3QUEIJOS, XBURGUER3, XBURGUER3QUEIJOSSALADA, XBURGUER3CARNESSALADA, XBURGUER3CARNES3QUEIJOS, XBURGUER3CARNES3QUEIJOSSALADA} = require('../enums/lanches');
 

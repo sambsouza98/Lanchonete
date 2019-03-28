@@ -1,6 +1,6 @@
 const getIngredientes = require('./services/getIngredientes')();
 const getCardapio= require('./services/getCardapio')();
-const calcularPreco= require('./services/calcularPreco')();
+const calcularPreco= require('./controller/calcularPreco')();
 const bodyParser = require('body-parser');
 // create application/json parser
 const jsonParser = bodyParser.json();

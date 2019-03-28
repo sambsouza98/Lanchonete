@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9716d12c-cfcb-42a7-a186-b35268b200d4" name="Default" comment="Implementacao da rota de post /Pedido para simular uma insercao de um pedido no carrinho e implementacao dos testes para as rotas pré-existentes (getIngredientes e getCardapio) e para a nova rota de post.">
-      <change afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enums/ingredientes.js" beforeDir="false" afterPath="$PROJECT_DIR$/enums/ingredientes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enums/lanches.js" beforeDir="false" afterPath="$PROJECT_DIR$/enums/lanches.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocks/ingredientes.json" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/ingredientes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocks/lanches.json" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/lanches.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/promocoes/isLight.js" beforeDir="false" afterPath="$PROJECT_DIR$/promocoes/isLight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/promocoes/muitaCarne.js" beforeDir="false" afterPath="$PROJECT_DIR$/promocoes/muitaCarne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/promocoes/muitoQueijo.js" beforeDir="false" afterPath="$PROJECT_DIR$/promocoes/muitoQueijo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/calcularPreco.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/calcularPreco.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/getCardapio.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/getCardapio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/getIngredientes.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/getIngredientes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/API.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/API.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.js" afterDir="false" />
-    </list>
+    <list default="true" id="9716d12c-cfcb-42a7-a186-b35268b200d4" name="Default" comment="Refatoracao do código e adaptacao dos testes para o novo formato de objetos" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -83,7 +67,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
+            <state relative-caret-position="328">
               <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
@@ -281,7 +265,7 @@
       <workItem from="1553637046041" duration="392000" />
       <workItem from="1553638359244" duration="9004000" />
       <workItem from="1553661864676" duration="2772000" />
-      <workItem from="1553734199970" duration="11901000" />
+      <workItem from="1553734199970" duration="12138000" />
     </task>
     <task id="LOCAL-00001" summary="Configuracao inicial do node, e inicio da implementacao do código. &#10;Criação de endpoints para retornar dados sobre os ingredientes e sobre o cardápio.">
       <created>1553308281118</created>
@@ -332,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553724206952</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refatoracao do código e adaptacao dos testes para o novo formato de objetos">
+      <created>1553787228152</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1553787228152</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -341,11 +332,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83712000" />
+    <option name="totallyTimeSpent" value="83949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16920027" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -360,9 +350,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32352942" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.055882353" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3764706" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3764706" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -401,7 +391,8 @@
     <MESSAGE value="Criação de uma enum para centralizar a relacao de ids com os ingredientes e facilitar a interpretacao do código." />
     <MESSAGE value="Implementacao da funcao calcularPreco e dos seus respectivos testes." />
     <MESSAGE value="Implementacao da rota de post /Pedido para simular uma insercao de um pedido no carrinho e implementacao dos testes para as rotas pré-existentes (getIngredientes e getCardapio) e para a nova rota de post." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementacao da rota de post /Pedido para simular uma insercao de um pedido no carrinho e implementacao dos testes para as rotas pré-existentes (getIngredientes e getCardapio) e para a nova rota de post." />
+    <MESSAGE value="Refatoracao do código e adaptacao dos testes para o novo formato de objetos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refatoracao do código e adaptacao dos testes para o novo formato de objetos" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -555,7 +546,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
+        <state relative-caret-position="328">
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
