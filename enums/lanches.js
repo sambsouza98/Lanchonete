@@ -1,13 +1,159 @@
+const {ALFACE, BACON, OVO, QUEIJO, HAMBURGUER} = require('./ingredientes');
+
 module.exports = {
-    XBACON: [ 2, 3, 5 ],
-    XBURGUER: [ 3, 5 ],
-    XBURGUER3QUEIJOS: [ 3, 5, 5, 5 ],
-    XBURGUER3QUEIJOSSALADA: [ 1, 3, 5, 5, 5 ],
-    XBURGUER3: [3, 3, 3, 5],
-    XBURGUER3CARNESSALADA: [1, 3, 3, 3, 5],
-    XBURGUER3CARNES3QUEIJOS: [3, 3, 3, 5, 5, 5],
-    XBURGUER3CARNES3QUEIJOSSALADA: [1, 3, 3, 3, 5, 5, 5],
-    XEGG: [ 4, 3, 5 ],
-    XEGGBACON: [ 4, 2, 3, 5 ],
-    XBURGUERSALADA: [1, 3, 5],
+    XBACON: {
+        ingredientes: {
+            [ALFACE]: {
+                quantidade: 0
+            }, [BACON]: {
+                quantidade: 1
+            }, [HAMBURGUER]: {
+                quantidade: 1
+            }, [OVO]: {
+                quantidade: 0
+            }, [QUEIJO]: {
+                quantidade: 1
+            }
+        }
+    },
+    XBURGUER: {
+        ingredientes: {
+            [ALFACE]: {
+                quantidade: 0
+            }, [BACON]: {
+                quantidade: 0
+            }, [HAMBURGUER]: {
+                quantidade: 1
+            }, [OVO]: {
+                quantidade: 0
+            }, [QUEIJO]: {
+                quantidade: 1
+            }}
+    },
+    XBURGUER3QUEIJOS: {
+        ingredientes: {
+            [ALFACE]: {
+                quantidade: 0
+            }, [BACON]: {
+                quantidade: 0
+            }, [HAMBURGUER]: {
+                quantidade: 1
+            }, [OVO]: {
+                quantidade: 0
+            }, [QUEIJO]: {
+                quantidade: 3
+            }}
+    },
+    XBURGUER3QUEIJOSSALADA: {
+        ingredientes: {
+            [ALFACE]: {
+                quantidade: 1
+            }, [BACON]: {
+                quantidade: 0
+            }, [HAMBURGUER]: {
+                quantidade: 1
+            }, [OVO]: {
+                quantidade: 0
+            }, [QUEIJO]: {
+                quantidade: 3
+            }}
+    },
+    XBURGUER3: {
+        ingredientes: {
+            [ALFACE]: {
+                quantidade: 0
+            }, [BACON]: {
+                quantidade: 0
+            }, [HAMBURGUER]: {
+                quantidade: 3
+            }, [OVO]: {
+                quantidade: 0
+            }, [QUEIJO]: {
+                quantidade: 1
+            }}
+    },
+    XBURGUER3CARNESSALADA: {
+        ingredientes: {
+            [ALFACE]: {
+                quantidade: 1
+            }, [BACON]: {
+                quantidade: 0
+            }, [HAMBURGUER]: {
+                quantidade: 3
+            }, [OVO]: {
+                quantidade: 0
+            }, [QUEIJO]: {
+                quantidade: 1
+            }}
+    },
+    XBURGUER3CARNES3QUEIJOS: {
+        ingredientes: {
+            [ALFACE]: {
+                quantidade: 0
+            }, [BACON]: {
+                quantidade: 0
+            }, [HAMBURGUER]: {
+                quantidade: 3
+            }, [OVO]: {
+                quantidade: 0
+            }, [QUEIJO]: {
+                quantidade: 3
+            }}
+    },
+    XBURGUER3CARNES3QUEIJOSSALADA: {
+        ingredientes: {
+            [ALFACE]: {
+                quantidade: 1
+            }, [BACON]: {
+                quantidade: 0
+            }, [HAMBURGUER]: {
+                quantidade: 3
+            }, [OVO]: {
+                quantidade: 0
+            }, [QUEIJO]: {
+                quantidade: 3
+            }}
+    },
+    XEGG: {
+        ingredientes: {
+            [ALFACE]: {
+                quantidade: 0
+            }, [BACON]: {
+                quantidade: 0
+            }, [HAMBURGUER]: {
+                quantidade: 1
+            }, [OVO]: {
+                quantidade: 1
+            }, [QUEIJO]: {
+                quantidade: 1
+            }}
+    },
+    XEGGBACON: {
+        ingredientes: {
+            [ALFACE]: {
+                quantidade: 0
+            }, [BACON]: {
+                quantidade: 1
+            }, [HAMBURGUER]: {
+                quantidade: 1
+            }, [OVO]: {
+                quantidade: 1
+            }, [QUEIJO]: {
+                quantidade: 1
+            }}
+    },
+    XBURGUERSALADA: {
+        ingredientes: {
+            [ALFACE]: {
+                quantidade: 1
+            }, [BACON]: {
+                quantidade: 0
+            }, [HAMBURGUER]: {
+                quantidade: 1
+            }, [OVO]: {
+                quantidade: 0
+            }, [QUEIJO]: {
+                quantidade: 1
+            }}
+    }
 };

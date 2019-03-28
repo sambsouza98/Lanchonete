@@ -1,16 +1,29 @@
 const {lanches} = require('../mocks/lanches');
+const {ingredientes} = require('../mocks/ingredientes');
 
 module.exports = () => {
-    function getLanches(lanche = null){
+    function getLanches(idLanche = null){
 
-        if(lanche){
-            lanche = parseInt(lanche);
-            let dadosLanche = lanches.filter(lanc => lanc.id === lanche);
+        let cardapio = lanches.map(lanche => {
+            // let ingredientesLanche = {...ingredientes};
+            let ingredientesLanche = JSON.parse(JSON.stringify(ingredientes));
 
-            return dadosLanche ? dadosLanche[0] : {};
+            lanche.ingredientes.forEach(ingrediente => ingredientesLanche[ingrediente].quantidade++)
+
+            return {
+                ...lanche,
+                ingredientes: ingredientesLanche
+            }
+        })
+
+        if(idLanche){
+            let lanche = cardapio.filter(lanche => {
+                return lanche.id == idLanche;
+            })
+            return lanche[0] ? lanche[0] : {};
         }
 
-        return lanches;
+        return cardapio;
     }
 
     return getLanches;

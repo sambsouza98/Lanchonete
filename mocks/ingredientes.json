@@ -1,9 +1,19 @@
 {
-  "ingredientes": [
-    {"id": 1, "nome": "Alface", "valor": 0.40 },
-    {"id": 2, "nome": "Bacon", "valor": 2.00},
-    {"id": 3, "nome": "Hambúrguer de carne", "valor": 3.00},
-    {"id": 4, "nome": "Ovo", "valor": 0.80},
-    {"id": 5, "nome": "Queijo", "valor": 1.50}
-  ]
+  "ingredientes": {
+    "1": {
+      "nome": "Alface", "valor": 0.40, "quantidade": 0
+    },
+    "2": {
+      "nome": "Bacon", "valor": 2.00, "quantidade": 0
+    },
+    "3": {
+      "nome": "Hambúrguer de carne", "valor": 3.00, "quantidade": 0
+    },
+    "4": {
+      "nome": "Ovo", "valor": 0.80, "quantidade": 0
+    },
+    "5": {
+      "nome": "Queijo", "valor": 1.50, "quantidade": 0
+    }
+  }
 }

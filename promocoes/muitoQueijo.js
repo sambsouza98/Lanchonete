@@ -1,19 +1,12 @@
 /*
-* Funcao que recebe um id de ingredientes e retorna a quantidade de queijos que nao serao cobrados.
+* Funcao que recebe um objeto de ingredientes e retorna a quantidade de queijos que nao serao cobrados.
 * */
 
 const {QUEIJO} = require('../enums/ingredientes');
 
 module.exports = () => {
-    function muitoQueijo (idsIngredientes){
-        let qtdeQueijos = 0;
-
-        idsIngredientes.forEach(idIngrediente => {
-            if(idIngrediente === QUEIJO)
-                qtdeQueijos++;
-        })
-
-        return Math.floor(qtdeQueijos/3);
+    function muitoQueijo (ingredientes){
+        return Math.floor((ingredientes[QUEIJO].quantidade)/3);
     }
     return muitoQueijo;
 }

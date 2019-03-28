@@ -1,7 +1,7 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const {XBURGUERSALADA} = require('../enums/lanches');
-
+const should = chai.should();
 chai.use(chaiHttp);
 
 describe("Teste das APIs da Lanchonete",function() {
@@ -10,7 +10,7 @@ describe("Teste das APIs da Lanchonete",function() {
             .get('/Ingredientes')
             .end((err, res) => {
                 res.should.have.status(200);
-                res.body.should.be.a('array');
+                res.body.should.be.a('object');
                 done();
             });
     });
@@ -49,7 +49,7 @@ describe("Teste das APIs da Lanchonete",function() {
 
     it('Teste de inserir um pedido', (done) => {
         const objEnviado = {
-            ingredientes: XBURGUERSALADA,
+            lanche: XBURGUERSALADA,
         };
 
         chai.request('http://localhost:8080')

@@ -1,19 +1,12 @@
 /*
-* Funcao que recebe um id de ingredientes e retorna a quantidade de carnes que nao serao cobradas.
+* Funcao que recebe um objeto ingredientes e retorna a quantidade de carnes que nao serao cobradas sabendo que a regra é: a cada 3 carnes 1 sai de graça.
 * */
 
 const {HAMBURGUER} = require('../enums/ingredientes');
 
 module.exports = () => {
-    function muitaCarne (idsIngredientes){
-        let qtdeCarne = 0;
-
-        idsIngredientes.forEach(idIngrediente => {
-            if(idIngrediente === HAMBURGUER)
-                qtdeCarne++;
-        })
-
-        return Math.floor(qtdeCarne/3);
+    function muitaCarne (ingredientes){
+        return Math.floor((ingredientes[HAMBURGUER].quantidade)/3);
     }
     return muitaCarne;
 }
