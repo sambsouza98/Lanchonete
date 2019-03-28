@@ -2,6 +2,10 @@
 
 Repositório criado para execução de teste técnico em Node.Js
 
+Instruçoes para execução:
+
+Para iniciar o projeto é necessário executar o comando 'npm install' na pasta raiz raiz do projeto. Após as instalações acabarem, é necessário rodar o comando 'nodemon index.js' também na pasta raiz do backend. O servidor irá se inicializar na porta 8080. Para executar o front é necessário executar também o 'npm install', mas agora na pasta raiz do frontend. Após as instalações acabarem é necessário rodar o comando 'npm start'. O frontend irá se inicializar na porta 3000. 
+
 Descrição:
 
 Somos uma startup do ramo de alimentos e precisamos de uma aplicação web para gerir nosso negócio. Nossa especialidade é a venda de lanches, de modo que alguns lanches são opções de cardápio e outros podem conter ingredientes personalizados.
